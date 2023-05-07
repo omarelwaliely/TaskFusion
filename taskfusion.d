@@ -1,0 +1,1 @@
+/home/muhammadel-mahdi/Desktop/TaskFusion/taskfusion_cli/target/release/taskfusion: /home/muhammadel-mahdi/Desktop/TaskFusion/taskfusion_cli/src/main.rs /home/muhammadel-mahdi/Desktop/TaskFusion/taskfusion_cli/theme.toml

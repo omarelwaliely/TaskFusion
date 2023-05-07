@@ -1,0 +1,386 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  
+}
+
+h1 {
+  text-align: center;
+  color: #444444;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* Style for filter button */
+.filter-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Popup container */
+.filter-popup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Content of the popup */
+.filter-popup-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+}
+
+/* Show the popup when filter button is clicked */
+.filter-popup .filter-btn:focus + .filter-popup-content {
+  display: block;
+}
+
+/* Style for filter input */
+.filter-input {
+  padding: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Style for submit button */
+.filter-submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="text"],
+select {
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; 
+  border-bottom: 1px solid #cccccc;
+  font-size: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+#processes-table {
+  margin-top: 20px;
+  width: 100%;
+  table-layout: fixed;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.infoStuff {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.system-info {
+  display: inline-block;
+  /*flex-direction: column;
+  align-items: flex-start;*/
+  width:50%;
+  margin-right: 10px;
+}  
+
+.system-usage {
+  display: inline-block;
+  /*flex-direction: column;
+  align-items: center;*/
+  width:49%;
+
+}
+
+/* .system-usage div {
+  margin-bottom: 10px;
+} */
+
+#sys-name{
+  font-size:16px;
+}
+
+.system-usage{
+  margin-left: 10px;
+}
+
+.progress-bar {
+  position: relative;
+  margin-bottom: 10px;
+  height: 30px;
+  background-color: #C6C3C3;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease-in-out;
+}
+
+.bar-label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bar-percentage {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#memory-bar {
+  background-color: #4CAF50;
+  width: 50%;
+}
+
+#cpu-bar {
+  background-color: #2196F3;
+}
+
+#swap-bar {
+  background-color: #f44336;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeButton {
+  display: inline-block;
+  background-color: #4A87CE;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out 0.2s;
+}
+
+.homeButton:hover {
+  background-color: black;
+}
+
+
+.homeButton:first-of-type {
+  float: left;
+  margin-left: -2px;
+}
+
+.homeButton:last-of-type {
+  float: right;
+  margin-right: 168px;
+}
+.buttonn{
+  background-color: #f5f5dc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.Button {
+  justify-content: center;  
+align-items: center;  
+  display: flex;
+  background-color: #4A87CE;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out 0.1s;
+  width:150px;
+  margin:auto;
+}
+
+.Button:hover {
+  background-color: black;
+}
+
+#filter-button{
+  transition: background-color 0.2s ease-in-out 0.1s;
+}
+#filter-button:hover{
+  background-color: black;
+}
+
+.logo{
+margin-bottom: -300px;
+margin-left: -20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.fade-in:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+ body {
+  background-color: #dfe8f1;
+ }
+
+ .wrapper{
+  visibility: hidden;
+  position: absolute;
+  width: 250px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+.wrapper .menu{
+  padding: 10px 12px;
+}
+.content .item{
+  list-style: none;
+  font-size: 18px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding: 0 5px 0 10px;
+}
+.content .item:hover{
+  background: #f2f2f2;
+}
+.content .item span{
+  margin-left: 8px;
+  font-size: 16px;
+}
+.content .share{
+  position: relative;
+  justify-content: space-between;
+}
+.share .share-menu{
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  right: -100px;
+  top: -35px;
+  padding: 13px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+.share:hover .share-menu{
+  opacity: 1;
+  pointer-events: auto;
+}
+ 

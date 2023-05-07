@@ -1,0 +1,26 @@
+body {
+    background-color: #f5f5dc;
+   }
+.buttonn{
+    background-color: #f5f5dc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .Button {
+    justify-content: center;  
+  align-items: center;  
+    display: flex;
+    background-color: #4A87CE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out 0.1s;
+    width:150px;
+    margin:auto;
+  }
+  
+  .Button:hover {
+    background-color: black;
+  }

@@ -1,0 +1,80 @@
+# Define the color scheme for the theme
+[colors]
+# Background color of the UI
+background = "#1e1e1e"
+# Foreground color of the UI
+foreground = "#d4d4d4"
+
+# Define the styles for various UI elements
+[styles]
+# Default style for the UI
+default = "fg(foreground) bg(background)"
+# Style for primary elements
+primary = "fg(#50a0ff)"
+# Style for secondary elements
+secondary = "fg(#888888)"
+# Style for warning messages
+warning = "fg(#ff8800)"
+# Style for danger messages
+danger = "fg(#ff4444)"
+# Style for success messages
+success = "fg(#00cc00)"
+
+# Define the colors for various UI elements
+[selection]
+background = "#444444"
+
+[scrollbar]
+background = "#444444"
+thumb = "#888888"
+
+[dialog]
+background = "#222222"
+border = "#50a0ff"
+title = "#50a0ff"
+
+[view]
+scrollbar_color = "#50a0ff"
+cursor_color = "#d4d4d4"
+highlight = "#50a0ff"
+word_wrap_marker = "#888888"
+
+[button]
+background = "#50a0ff"
+foreground = "#1e1e1e"
+hover_background = "#d4d4d4"
+hover_foreground = "#1e1e1e"
+pressed_background = "#444444"
+pressed_foreground = "#d4d4d4"
+
+[text_box]
+background = "#444444"
+foreground = "#d4d4d4"
+border = "#50a0ff"
+scrollbar_color = "#50a0ff"
+cursor_color = "#d4d4d4"
+selection_background = "#50a0ff"
+selection_foreground = "#d4d4d4"
+
+[list_view]
+background = "#222222"
+foreground = "#d4d4d4"
+highlight = "#50a0ff"
+selection_background = "#50a0ff"
+selection_foreground = "#d4d4d4"
+scrollbar_color = "#50a0ff"
+
+[menu]
+background = "#222222"
+foreground = "#d4d4d4"
+border = "#50a0ff"
+selection_background = "#50a0ff"
+selection_foreground = "#d4d4d4"
+
+[progress_bar]
+background = "#444444"
+fill = "#50a0ff"
+
+[shadow]
+color = "#505050"
+radius = 5

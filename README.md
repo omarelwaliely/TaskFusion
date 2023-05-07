@@ -49,6 +49,8 @@ To run the entire project, use the following command:
 ./taskfusion -ls 
 ```
 This takes you to the home screen that shows all the processes, you can also access specific pages of the app from the app or from terminal using flags:-
+
+
 1- you can filter by PID 
 ``` bash
 ./taskfusion -p <pid>

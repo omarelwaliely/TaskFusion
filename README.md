@@ -46,8 +46,59 @@ To start `taskfusion_gui` as a standalone, run the following command:
 To run the entire project, use the following command:
 
 ```bash
-./taskfusion -c
+./taskfusion -ls 
 ```
+This takes you to the home screen that shows all the processes, you can also access specific pages of the app from the app or from terminal using flags:-
+1- you can filter by PID 
+``` bash
+./taskfusion -p <pid>
+```
+
+2- Similarly, by state
+```bash
+./taskfusion -s <state>
+```
+3- by CMD:
+```bash
+./taskfusion -c <cmd>
+```
+
+4- by GID:
+```bash
+./taskfusion -g <gid>
+```
+
+5- by ppid 
+```bash
+./taskfusion -pp <gid>
+```
+
+6- To kill a process: 
+```bash
+./taskfusion -k <pid>
+```
+
+7- To kill a process and its children:-
+```bash
+./taskfusion -kp <pid>
+```
+
+8- To pause a process:-
+```bash
+./taskfusion -pa <pid>
+```
+
+9- to resume:-
+```bash
+./taskfusion -r <pid>
+```
+
+10- to change priority:-
+``` bash 
+./taskfusion -cpr <pid priority>
+```
+
+11-
 
 ## Creators
 

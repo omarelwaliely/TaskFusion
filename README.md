@@ -98,8 +98,19 @@ This takes you to the home screen that shows all the processes, you can also acc
 ./taskfusion -cpr <pid priority>
 ```
 
-11-
+11- to take a time stamped snapshot:- 
+``` bash 
+./taskfusion -t
+```
 
+12- to kill processes exceeding certain CPU usage threshold:-
+``` bash 
+./taskfusion -kt <threshold>
+```
+13- to view the process tree
+```bash
+./taskfusion -tree
+```
 ## Creators
 
 The creators of this project are Omar Elwaliely, Salma Aly, Mohamed Mahdi, and Salma Kaffafy of The American University in Cairo.

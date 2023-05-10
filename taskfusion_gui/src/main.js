@@ -274,7 +274,7 @@ async function filter_by() {
   } else if (filterBy === "ppid") {
     result = await invoke("filterByPpid", { ppid: parseInt(filterValue) });
   } else if (filterBy === "gid") {
-    result = await invoke("filterByGid", { gid: parseInt(filterValue) });
+    result = await invoke("filterByGID", { gid: parseInt(filterValue) });
   } else if(filterBy ==="cmd"){
     result = await invoke("filterby_cmd", {cmdyo: filterValue});
   }

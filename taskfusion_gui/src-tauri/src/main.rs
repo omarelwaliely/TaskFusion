@@ -57,7 +57,7 @@ fn listprocesses() -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
@@ -88,14 +88,14 @@ fn filterByPid(pid: i32) -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
 
 #[tauri::command]
 fn filterByState(state: char) -> String {
-    println!("over here\n");
+    //println!("over here\n");
     let mut timeofprocesses=0.0;
     for process in all_processes().unwrap() {
         if let Ok(stat) = process.unwrap().stat() {
@@ -121,7 +121,7 @@ fn filterByState(state: char) -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
@@ -155,7 +155,7 @@ fn filterby_cmd(cmdyo: String) -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 // #[tauri::command]
@@ -214,6 +214,7 @@ fn filterByPpid(ppid: i32)->String{
             } 
         }
     }
+    json.pop();
     json.push_str("]");
     json
 }
@@ -244,6 +245,7 @@ fn filterByGID(gid: i32)->String{
             } 
         }
     }
+    json.pop();
     json.push_str("]");
     json
 }
@@ -337,7 +339,7 @@ fn sortby_session() -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     return json;
 }
 
@@ -384,7 +386,7 @@ fn sortby_pid() -> String {
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
@@ -438,7 +440,7 @@ fn sortby_priority() -> String{
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
@@ -494,7 +496,7 @@ fn sortby_parent() ->String
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 
@@ -549,7 +551,7 @@ fn sortby_group()-> String{
     }
     json.pop();
     json.push_str("]");
-    println!("{}", json);
+    //println!("{}", json);
     json
 }
 #[tauri::command]
@@ -558,7 +560,7 @@ fn log_to_terminal(message: String) {
 }
 #[tauri::command]
 fn process_kill(pid: i32){
-    println!("yyeyeyeyeye\n\n\n");
+    //println!("yyeyeyeyeye\n\n\n");
     let pid = Pid::from_raw(pid); 
 
     match kill(pid, SIGTERM) {
